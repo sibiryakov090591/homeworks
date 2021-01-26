@@ -34,8 +34,9 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
                        {...restProps}/>
                 <label htmlFor="check">
                     <div className={s.box}><i>✓</i></div>
+                    {children && <span className={s.spanClassName}>{children}</span>}
                 </label>
-                {children && <span className={s.spanClassName}>{children}</span>}
+
             </div>
         </div>
     );
